@@ -1,1 +1,1 @@
-# Coree.Hosting.NetWindows
+# Coree.NETWindows
