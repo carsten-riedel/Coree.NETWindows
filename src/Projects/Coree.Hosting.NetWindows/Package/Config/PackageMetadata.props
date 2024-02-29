@@ -26,7 +26,7 @@
     <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 
     <Description>
-     <![CDATA[.NetCore library.]]>
+     <![CDATA[.NetWindows library.]]>
     </Description>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
