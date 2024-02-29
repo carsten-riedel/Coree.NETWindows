@@ -1,4 +1,4 @@
-﻿namespace Coree.Hosting.NetWindows
+﻿namespace Coree.NETWindows
 {
     public class Class1
     {

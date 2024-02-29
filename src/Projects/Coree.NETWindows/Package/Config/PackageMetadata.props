@@ -8,10 +8,10 @@
     <Owners>Carsten Riedel</Owners>
     <Company></Company>
     <Copyright>Copyright © Carsten Riedel 2024</Copyright>
-    <PackageId>Coree.Hosting.NetWindows</PackageId>
+    <PackageId>Coree.NETWindows</PackageId>
     <PackageTags>dotnet;class;library</PackageTags>
-    <PackageProjectUrl>https://github.com/carsten-riedel/Coree.Hosting.NetWindows</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/carsten-riedel/Coree.Hosting.NetWindows</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/carsten-riedel/Coree.NETWindows</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/carsten-riedel/Coree.NETWindows</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
 
     <VersionMajor>0</VersionMajor>
