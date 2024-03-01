@@ -4,6 +4,7 @@
     <TargetFrameworks>net6.0-windows;net7.0-windows;net8.0-windows</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <DebugType>embedded</DebugType>
   </PropertyGroup>
 
   <!-- NuGet Package configuration -->
@@ -11,8 +12,8 @@
   <Import Project="Package/Config/PackageSpecs.props" />
 
   <ItemGroup>
-    <PackageReference Include="Coree.Hosting.NetCore" Version="0.1.8825.30526-prerelease" />
-    <PackageReference Include="Coree.Hosting.NETStandard" Version="0.1.8825.30613-prerelease" />
+    <PackageReference Include="Coree.NET" Version="0.1.8826.11042" />
+    <PackageReference Include="Coree.NETStandard" Version="0.1.8825.37975" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
   </ItemGroup>
 
