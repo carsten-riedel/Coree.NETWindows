@@ -1,0 +1,43 @@
+{
+  "metadata": [
+    {
+      "noRestore": true,
+      "src": [
+        {
+          "src": "../../../Coree.NETWindows",
+          "files": [
+            "**/*.csproj"
+          ]
+        }
+      ],
+      "dest": "api",
+      "filter": "filterConfig.yml"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "../result/local",
+    "template": [
+      "statictoc",
+      "../_exported_templates/override"
+    ],
+    "globalMetadata": {
+      "_appName": "Coree.NETWindows",
+      "_appTitle": "Coree.NETWindows",
+      "_appFooter": "<pre></pre>"
+    }
+  }
+}
