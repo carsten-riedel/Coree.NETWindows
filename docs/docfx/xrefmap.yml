@@ -13,45 +13,6 @@ references:
   commentId: T:Coree.NETWindows.Services.PInvoke.IPInvokeService
   fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService
   nameWithType: IPInvokeService
-- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole
-  name: AllocConsole()
-  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_AllocConsole
-  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole
-  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole()
-  nameWithType: IPInvokeService.AllocConsole()
-- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole*
-  name: AllocConsole
-  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_AllocConsole_
-  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole
-  isSpec: "True"
-  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole
-  nameWithType: IPInvokeService.AllocConsole
-- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole2
-  name: AllocConsole2()
-  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_AllocConsole2
-  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole2
-  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole2()
-  nameWithType: IPInvokeService.AllocConsole2()
-- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole2*
-  name: AllocConsole2
-  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_AllocConsole2_
-  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole2
-  isSpec: "True"
-  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole2
-  nameWithType: IPInvokeService.AllocConsole2
-- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
-  name: AllocConsoleAsync(CancellationToken)
-  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_AllocConsoleAsync_System_Threading_CancellationToken_
-  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
-  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
-  nameWithType: IPInvokeService.AllocConsoleAsync(CancellationToken)
-- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync*
-  name: AllocConsoleAsync
-  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_AllocConsoleAsync_
-  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync
-  isSpec: "True"
-  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync
-  nameWithType: IPInvokeService.AllocConsoleAsync
 - uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButton
   name: DisableCloseButton()
   href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_DisableCloseButton
@@ -232,45 +193,6 @@ references:
   isSpec: "True"
   fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole
   nameWithType: PInvokeService.AllocConsole
-- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole2
-  name: AllocConsole2()
-  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_AllocConsole2
-  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole2
-  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole2()
-  nameWithType: PInvokeService.AllocConsole2()
-- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole2*
-  name: AllocConsole2
-  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_AllocConsole2_
-  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole2
-  isSpec: "True"
-  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole2
-  nameWithType: PInvokeService.AllocConsole2
-- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole3
-  name: AllocConsole3()
-  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_AllocConsole3
-  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole3
-  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole3()
-  nameWithType: PInvokeService.AllocConsole3()
-- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole3*
-  name: AllocConsole3
-  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_AllocConsole3_
-  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole3
-  isSpec: "True"
-  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole3
-  nameWithType: PInvokeService.AllocConsole3
-- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
-  name: AllocConsoleAsync(CancellationToken)
-  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_AllocConsoleAsync_System_Threading_CancellationToken_
-  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
-  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
-  nameWithType: PInvokeService.AllocConsoleAsync(CancellationToken)
-- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync*
-  name: AllocConsoleAsync
-  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_AllocConsoleAsync_
-  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync
-  isSpec: "True"
-  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync
-  nameWithType: PInvokeService.AllocConsoleAsync
 - uid: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButton
   name: DisableCloseButton()
   href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_DisableCloseButton
