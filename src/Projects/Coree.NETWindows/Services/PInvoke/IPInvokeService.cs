@@ -59,6 +59,9 @@ namespace Coree.NETWindows.Services.PInvoke
         /// </summary>
         void AllocConsole();
 
+        void AllocConsole2();
+
+
         /// <summary>
         /// Asynchronously allocates a new console window if one does not already exist.
         /// </summary>

@@ -162,6 +162,18 @@ namespace Coree.NETWindows.Services.PInvoke
             AllocConsoleAsync(CancellationToken.None).GetAwaiter().GetResult();
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static void AllocConsole3()
+        {
+            ConsoleManagement.AllocConsole();
+        }
+
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public void AllocConsole2()
+        {
+            ConsoleManagement.AllocConsole();
+        }
+
         /// <summary>
         /// Asynchronously allocates a new console window if one does not already exist.
         /// </summary>
