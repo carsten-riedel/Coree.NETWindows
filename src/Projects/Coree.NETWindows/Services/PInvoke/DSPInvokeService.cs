@@ -9,7 +9,7 @@ namespace Coree.NETWindows.Services.PInvoke
     /// This service implements the IPInvokeService interface, providing methods for platform invocation.
     /// This service inherits from DependencySingleton&lt;PInvokeService&gt;, which supports both dependency injection (DI) and non-DI scenarios
     /// </summary>
-    public partial class PInvokeService : DependencySingleton<PInvokeService>, IPInvokeService
+    public partial class PInvokeService : DependencySingleton<PInvokeService>, IPInvokeService , IDependencySingleton
     {
         /// <summary>
         /// Initializes a new instance of the PInvokeService class with the specified logger and configuration.

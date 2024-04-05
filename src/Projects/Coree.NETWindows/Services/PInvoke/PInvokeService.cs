@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Coree.NETWindows.Services.PInvoke
 {
-    public partial class PInvokeService : DependencySingleton<PInvokeService>, IPInvokeService
+    public partial class PInvokeService : DependencySingleton<PInvokeService>, IPInvokeService , IDependencySingleton
     {
         /// <summary>
         /// Synchronously disables the close button of the console window. This method internally

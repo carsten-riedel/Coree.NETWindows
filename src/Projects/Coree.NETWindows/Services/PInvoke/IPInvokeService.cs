@@ -12,7 +12,7 @@ namespace Coree.NETWindows.Services.PInvoke
     /// <summary>
     /// Represents the interface for invoking platform (P/Invoke) methods.
     /// </summary>
-    public interface IPInvokeService
+    public interface IPInvokeService 
     {
         /// <summary>
         /// Disables the close button of the current window using platform-specific methods.
