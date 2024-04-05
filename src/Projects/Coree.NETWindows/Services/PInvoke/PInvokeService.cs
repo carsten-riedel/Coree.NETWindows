@@ -232,8 +232,7 @@ namespace Coree.NETWindows.Services.PInvoke
             }
         }
 
- 
-        private static void SetConsoleColor(ConsoleManagement.ConsoleColors foregroundColor, ConsoleManagement.ConsoleColors backgroundColor)
+        public static void SetConsoleColor(ConsoleManagement.ConsoleColors foregroundColor, ConsoleManagement.ConsoleColors backgroundColor)
         {
             IntPtr consoleHandle = ConsoleManagement.GetStdHandle(ConsoleManagement.STD_OUTPUT_HANDLE);
             ushort attributes = (ushort)((int)backgroundColor << 4 | (int)foregroundColor);
@@ -242,7 +241,7 @@ namespace Coree.NETWindows.Services.PInvoke
                 throw new System.ComponentModel.Win32Exception(Marshal.GetLastWin32Error());
         }
 
-        private static void SetConsoleColors(System.Drawing.Color screenTextColor, System.Drawing.Color screenBackgroundColor, System.Drawing.Color popupTextColor, System.Drawing.Color popupBackgroundColor)
+        public static void SetConsoleColors(System.Drawing.Color screenTextColor, System.Drawing.Color screenBackgroundColor, System.Drawing.Color popupTextColor, System.Drawing.Color popupBackgroundColor)
         {
             IntPtr hConsoleOutput = ConsoleManagement.GetStdHandle(ConsoleManagement.STD_OUTPUT_HANDLE);
             ConsoleManagement.CONSOLE_SCREEN_BUFFER_INFO_EX csbe = ConsoleManagement.CONSOLE_SCREEN_BUFFER_INFO_EX.Create();
@@ -259,7 +258,5 @@ namespace Coree.NETWindows.Services.PInvoke
             // Apply the changes
             ConsoleManagement.SetConsoleScreenBufferInfoEx(hConsoleOutput, ref csbe);
         }
-
-
     }
 }
