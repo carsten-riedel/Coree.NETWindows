@@ -1,0 +1,260 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Coree.NETWindows.Services.PInvoke
+  name: Coree.NETWindows.Services.PInvoke
+  href: api/Coree.NETWindows.Services.PInvoke.html
+  commentId: N:Coree.NETWindows.Services.PInvoke
+  fullName: Coree.NETWindows.Services.PInvoke
+  nameWithType: Coree.NETWindows.Services.PInvoke
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService
+  name: IPInvokeService
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html
+  commentId: T:Coree.NETWindows.Services.PInvoke.IPInvokeService
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService
+  nameWithType: IPInvokeService
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole
+  name: AllocConsole()
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_AllocConsole
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole()
+  nameWithType: IPInvokeService.AllocConsole()
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole*
+  name: AllocConsole
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_AllocConsole_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsole
+  nameWithType: IPInvokeService.AllocConsole
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
+  name: AllocConsoleAsync(CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_AllocConsoleAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
+  nameWithType: IPInvokeService.AllocConsoleAsync(CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync*
+  name: AllocConsoleAsync
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_AllocConsoleAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.AllocConsoleAsync
+  nameWithType: IPInvokeService.AllocConsoleAsync
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButton
+  name: DisableCloseButton()
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_DisableCloseButton
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButton
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButton()
+  nameWithType: IPInvokeService.DisableCloseButton()
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButton*
+  name: DisableCloseButton
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_DisableCloseButton_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButton
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButton
+  nameWithType: IPInvokeService.DisableCloseButton
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButtonAsync(System.Threading.CancellationToken)
+  name: DisableCloseButtonAsync(CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_DisableCloseButtonAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButtonAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButtonAsync(System.Threading.CancellationToken)
+  nameWithType: IPInvokeService.DisableCloseButtonAsync(CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButtonAsync*
+  name: DisableCloseButtonAsync
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_DisableCloseButtonAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButtonAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButtonAsync
+  nameWithType: IPInvokeService.DisableCloseButtonAsync
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsole
+  name: FreeConsole()
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_FreeConsole
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsole
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsole()
+  nameWithType: IPInvokeService.FreeConsole()
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsole*
+  name: FreeConsole
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_FreeConsole_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsole
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsole
+  nameWithType: IPInvokeService.FreeConsole
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsoleAsync(System.Threading.CancellationToken)
+  name: FreeConsoleAsync(CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_FreeConsoleAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsoleAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsoleAsync(System.Threading.CancellationToken)
+  nameWithType: IPInvokeService.FreeConsoleAsync(CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsoleAsync*
+  name: FreeConsoleAsync
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_FreeConsoleAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsoleAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsoleAsync
+  nameWithType: IPInvokeService.FreeConsoleAsync
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFont(System.Int16,System.String)
+  name: SetConsoleFont(short, string)
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_SetConsoleFont_System_Int16_System_String_
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFont(System.Int16,System.String)
+  name.vb: SetConsoleFont(Short, String)
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFont(short, string)
+  fullName.vb: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFont(Short, String)
+  nameWithType: IPInvokeService.SetConsoleFont(short, string)
+  nameWithType.vb: IPInvokeService.SetConsoleFont(Short, String)
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFont*
+  name: SetConsoleFont
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_SetConsoleFont_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFont
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFont
+  nameWithType: IPInvokeService.SetConsoleFont
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFontAsync(System.Int16,System.String,System.Threading.CancellationToken)
+  name: SetConsoleFontAsync(short, string, CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_SetConsoleFontAsync_System_Int16_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFontAsync(System.Int16,System.String,System.Threading.CancellationToken)
+  name.vb: SetConsoleFontAsync(Short, String, CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFontAsync(short, string, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFontAsync(Short, String, System.Threading.CancellationToken)
+  nameWithType: IPInvokeService.SetConsoleFontAsync(short, string, CancellationToken)
+  nameWithType.vb: IPInvokeService.SetConsoleFontAsync(Short, String, CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFontAsync*
+  name: SetConsoleFontAsync
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_SetConsoleFontAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFontAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFontAsync
+  nameWithType: IPInvokeService.SetConsoleFontAsync
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService
+  name: PInvokeService
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html
+  commentId: T:Coree.NETWindows.Services.PInvoke.PInvokeService
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService
+  nameWithType: PInvokeService
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETWindows.Services.PInvoke.PInvokeService},Microsoft.Extensions.Configuration.IConfiguration)
+  name: PInvokeService(ILogger<PInvokeService>, IConfiguration)
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETWindows_Services_PInvoke_PInvokeService__Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETWindows.Services.PInvoke.PInvokeService},Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: New(ILogger(Of PInvokeService), IConfiguration)
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.PInvokeService(Microsoft.Extensions.Logging.ILogger<Coree.NETWindows.Services.PInvoke.PInvokeService>, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: Coree.NETWindows.Services.PInvoke.PInvokeService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETWindows.Services.PInvoke.PInvokeService), Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: PInvokeService.PInvokeService(ILogger<PInvokeService>, IConfiguration)
+  nameWithType.vb: PInvokeService.New(ILogger(Of PInvokeService), IConfiguration)
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.#ctor*
+  name: PInvokeService
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService__ctor_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.PInvokeService
+  fullName.vb: Coree.NETWindows.Services.PInvoke.PInvokeService.New
+  nameWithType: PInvokeService.PInvokeService
+  nameWithType.vb: PInvokeService.New
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole
+  name: AllocConsole()
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_AllocConsole
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole()
+  nameWithType: PInvokeService.AllocConsole()
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole*
+  name: AllocConsole
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_AllocConsole_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsole
+  nameWithType: PInvokeService.AllocConsole
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
+  name: AllocConsoleAsync(CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_AllocConsoleAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync(System.Threading.CancellationToken)
+  nameWithType: PInvokeService.AllocConsoleAsync(CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync*
+  name: AllocConsoleAsync
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_AllocConsoleAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.AllocConsoleAsync
+  nameWithType: PInvokeService.AllocConsoleAsync
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButton
+  name: DisableCloseButton()
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_DisableCloseButton
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButton
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButton()
+  nameWithType: PInvokeService.DisableCloseButton()
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButton*
+  name: DisableCloseButton
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_DisableCloseButton_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButton
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButton
+  nameWithType: PInvokeService.DisableCloseButton
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButtonAsync(System.Threading.CancellationToken)
+  name: DisableCloseButtonAsync(CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_DisableCloseButtonAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButtonAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButtonAsync(System.Threading.CancellationToken)
+  nameWithType: PInvokeService.DisableCloseButtonAsync(CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButtonAsync*
+  name: DisableCloseButtonAsync
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_DisableCloseButtonAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButtonAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButtonAsync
+  nameWithType: PInvokeService.DisableCloseButtonAsync
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsole
+  name: FreeConsole()
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_FreeConsole
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsole
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsole()
+  nameWithType: PInvokeService.FreeConsole()
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsole*
+  name: FreeConsole
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_FreeConsole_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsole
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsole
+  nameWithType: PInvokeService.FreeConsole
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsoleAsync(System.Threading.CancellationToken)
+  name: FreeConsoleAsync(CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_FreeConsoleAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsoleAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsoleAsync(System.Threading.CancellationToken)
+  nameWithType: PInvokeService.FreeConsoleAsync(CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsoleAsync*
+  name: FreeConsoleAsync
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_FreeConsoleAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsoleAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsoleAsync
+  nameWithType: PInvokeService.FreeConsoleAsync
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFont(System.Int16,System.String)
+  name: SetConsoleFont(short, string)
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleFont_System_Int16_System_String_
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFont(System.Int16,System.String)
+  name.vb: SetConsoleFont(Short, String)
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFont(short, string)
+  fullName.vb: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFont(Short, String)
+  nameWithType: PInvokeService.SetConsoleFont(short, string)
+  nameWithType.vb: PInvokeService.SetConsoleFont(Short, String)
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFont*
+  name: SetConsoleFont
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleFont_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFont
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFont
+  nameWithType: PInvokeService.SetConsoleFont
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFontAsync(System.Int16,System.String,System.Threading.CancellationToken)
+  name: SetConsoleFontAsync(short, string, CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleFontAsync_System_Int16_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFontAsync(System.Int16,System.String,System.Threading.CancellationToken)
+  name.vb: SetConsoleFontAsync(Short, String, CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFontAsync(short, string, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFontAsync(Short, String, System.Threading.CancellationToken)
+  nameWithType: PInvokeService.SetConsoleFontAsync(short, string, CancellationToken)
+  nameWithType.vb: PInvokeService.SetConsoleFontAsync(Short, String, CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFontAsync*
+  name: SetConsoleFontAsync
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleFontAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFontAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFontAsync
+  nameWithType: PInvokeService.SetConsoleFontAsync
