@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Coree.NETWindows.NativeMethods
 {
-    internal static partial class ConsoleManagement
+    public static partial class ConsoleManagement
     {
         [DllImport("kernel32.dll", SetLastError = true)]
         internal static extern IntPtr GetConsoleWindow();
