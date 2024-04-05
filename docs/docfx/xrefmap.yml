@@ -65,6 +65,32 @@ references:
   isSpec: "True"
   fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableCloseButtonAsync
   nameWithType: IPInvokeService.DisableCloseButtonAsync
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditMode
+  name: DisableQuickEditMode()
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_DisableQuickEditMode
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditMode
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditMode()
+  nameWithType: IPInvokeService.DisableQuickEditMode()
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditMode*
+  name: DisableQuickEditMode
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_DisableQuickEditMode_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditMode
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditMode
+  nameWithType: IPInvokeService.DisableQuickEditMode
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditModeAsync(System.Threading.CancellationToken)
+  name: DisableQuickEditModeAsync(CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_DisableQuickEditModeAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditModeAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditModeAsync(System.Threading.CancellationToken)
+  nameWithType: IPInvokeService.DisableQuickEditModeAsync(CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditModeAsync*
+  name: DisableQuickEditModeAsync
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_DisableQuickEditModeAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditModeAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.DisableQuickEditModeAsync
+  nameWithType: IPInvokeService.DisableQuickEditModeAsync
 - uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.FreeConsole
   name: FreeConsole()
   href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_FreeConsole
@@ -200,6 +226,32 @@ references:
   isSpec: "True"
   fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableCloseButtonAsync
   nameWithType: PInvokeService.DisableCloseButtonAsync
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditMode
+  name: DisableQuickEditMode()
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_DisableQuickEditMode
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditMode
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditMode()
+  nameWithType: PInvokeService.DisableQuickEditMode()
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditMode*
+  name: DisableQuickEditMode
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_DisableQuickEditMode_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditMode
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditMode
+  nameWithType: PInvokeService.DisableQuickEditMode
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditModeAsync(System.Threading.CancellationToken)
+  name: DisableQuickEditModeAsync(CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_DisableQuickEditModeAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditModeAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditModeAsync(System.Threading.CancellationToken)
+  nameWithType: PInvokeService.DisableQuickEditModeAsync(CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditModeAsync*
+  name: DisableQuickEditModeAsync
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_DisableQuickEditModeAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditModeAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.DisableQuickEditModeAsync
+  nameWithType: PInvokeService.DisableQuickEditModeAsync
 - uid: Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsole
   name: FreeConsole()
   href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_FreeConsole
