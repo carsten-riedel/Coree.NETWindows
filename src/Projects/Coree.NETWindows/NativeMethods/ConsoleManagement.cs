@@ -36,7 +36,7 @@ namespace Coree.NETWindows.NativeMethods
         [DllImport("kernel32.dll", SetLastError = true)]
         internal static extern bool FreeConsole();
 
-        [DllImport("kernel32.dll", SetLastError = true)]
+        [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
         internal static extern bool SetConsoleTitle(string lpConsoleTitle);
 
         [StructLayout(LayoutKind.Sequential)]
