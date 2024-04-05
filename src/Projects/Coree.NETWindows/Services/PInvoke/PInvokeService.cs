@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
 using System.Threading;
 
 using Coree.NETStandard;
@@ -155,6 +156,7 @@ namespace Coree.NETWindows.Services.PInvoke
         /// <summary>
         /// Allocates a new console window synchronously.
         /// </summary>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void AllocConsole()
         {
             AllocConsoleAsync(CancellationToken.None).GetAwaiter().GetResult();
@@ -165,12 +167,16 @@ namespace Coree.NETWindows.Services.PInvoke
         /// </summary>
         /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
         /// <returns>A task representing the asynchronous operation.</returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public async Task AllocConsoleAsync(CancellationToken cancellationToken = default)
         {
             try
             {
-                ConsoleManagement.AllocConsole();
-                await Task.Delay(10, cancellationToken);
+                await Task.Run(() =>
+                {
+                    ConsoleManagement.AllocConsole();
+                }, cancellationToken);
+
                 logger.LogTrace("Successfully allocated console.");
             }
             catch (OperationCanceledException)
