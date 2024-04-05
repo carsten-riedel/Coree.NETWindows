@@ -116,6 +116,7 @@ This service inherits from DependencySingleton&lt;PInvokeService&gt;, which supp
   <div class="markdown level0 conceptual"></div>
   <div class="implements">
     <h5>Implements</h5>
+    <div><span class="xref">IDependencySingleton</span></div>
     <div><a class="xref" href="Coree.NETWindows.Services.PInvoke.IPInvokeService.html">IPInvokeService</a></div>
   </div>
   <div class="inheritedMembers">
@@ -137,7 +138,7 @@ This service inherits from DependencySingleton&lt;PInvokeService&gt;, which supp
   <h6><strong>Assembly</strong>: Coree.NETWindows.dll</h6>
   <h5 id="Coree_NETWindows_Services_PInvoke_PInvokeService_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PInvokeService : DependencySingleton&lt;PInvokeService&gt;, IPInvokeService</code></pre>
+    <pre><code class="lang-csharp hljs">public class PInvokeService : DependencySingleton&lt;PInvokeService&gt;, IDependencySingleton, IPInvokeService</code></pre>
   </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -642,6 +643,9 @@ Utilizes <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.thr
     </tbody>
   </table>
   <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Coree.NETStandard.Abstractions.IDependencySingleton</span>
+  </div>
   <div>
       <a class="xref" href="Coree.NETWindows.Services.PInvoke.IPInvokeService.html">IPInvokeService</a>
   </div>
