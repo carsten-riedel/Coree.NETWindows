@@ -157,48 +157,9 @@ namespace Coree.NETWindows.Services.PInvoke
         /// Allocates a new console window synchronously.
         /// </summary>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void AllocConsole()
-        {
-            AllocConsoleAsync(CancellationToken.None).GetAwaiter().GetResult();
-        }
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static void AllocConsole3()
+        public static void AllocConsole()
         {
             ConsoleManagement.AllocConsole();
-        }
-
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public void AllocConsole2()
-        {
-            ConsoleManagement.AllocConsole();
-        }
-
-        /// <summary>
-        /// Asynchronously allocates a new console window if one does not already exist.
-        /// </summary>
-        /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
-        /// <returns>A task representing the asynchronous operation.</returns>
-        [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public async Task AllocConsoleAsync(CancellationToken cancellationToken = default)
-        {
-            try
-            {
-                await Task.Run(() =>
-                {
-                    ConsoleManagement.AllocConsole();
-                }, cancellationToken);
-
-                logger.LogTrace("Successfully allocated console.");
-            }
-            catch (OperationCanceledException)
-            {
-                logger.LogInformation("AllocConsoleAsync operation was canceled.");
-            }
-            catch (Exception ex)
-            {
-                logger.LogError(ex, "Failed to allocate console asynchronously.");
-            }
         }
 
         /// <summary>

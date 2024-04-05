@@ -55,21 +55,6 @@ namespace Coree.NETWindows.Services.PInvoke
         Task SetConsoleFontAsync(short fontSize = 14, string fontName = "Lucida Console", CancellationToken cancellationToken = default);
 
         /// <summary>
-        /// Allocates a new console window synchronously.
-        /// </summary>
-        void AllocConsole();
-
-        void AllocConsole2();
-
-
-        /// <summary>
-        /// Asynchronously allocates a new console window if one does not already exist.
-        /// </summary>
-        /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
-        /// <returns>A task representing the asynchronous operation.</returns>
-        Task AllocConsoleAsync(CancellationToken cancellationToken = default);
-
-        /// <summary>
         /// Releases the current console window associated with the calling process synchronously.
         /// </summary>
         void FreeConsole();
