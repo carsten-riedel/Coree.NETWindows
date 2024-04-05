@@ -149,6 +149,38 @@ references:
   isSpec: "True"
   fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleFontAsync
   nameWithType: IPInvokeService.SetConsoleFontAsync
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitle(System.String)
+  name: SetConsoleTitle(string)
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_SetConsoleTitle_System_String_
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitle(System.String)
+  name.vb: SetConsoleTitle(String)
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitle(string)
+  fullName.vb: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitle(String)
+  nameWithType: IPInvokeService.SetConsoleTitle(string)
+  nameWithType.vb: IPInvokeService.SetConsoleTitle(String)
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitle*
+  name: SetConsoleTitle
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_SetConsoleTitle_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitle
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitle
+  nameWithType: IPInvokeService.SetConsoleTitle
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitleAsync(System.String,System.Threading.CancellationToken)
+  name: SetConsoleTitleAsync(string, CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_SetConsoleTitleAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitleAsync(System.String,System.Threading.CancellationToken)
+  name.vb: SetConsoleTitleAsync(String, CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitleAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitleAsync(String, System.Threading.CancellationToken)
+  nameWithType: IPInvokeService.SetConsoleTitleAsync(string, CancellationToken)
+  nameWithType.vb: IPInvokeService.SetConsoleTitleAsync(String, CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitleAsync*
+  name: SetConsoleTitleAsync
+  href: api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html#Coree_NETWindows_Services_PInvoke_IPInvokeService_SetConsoleTitleAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitleAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.IPInvokeService.SetConsoleTitleAsync
+  nameWithType: IPInvokeService.SetConsoleTitleAsync
 - uid: Coree.NETWindows.Services.PInvoke.PInvokeService
   name: PInvokeService
   href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html
@@ -310,3 +342,35 @@ references:
   isSpec: "True"
   fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFontAsync
   nameWithType: PInvokeService.SetConsoleFontAsync
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitle(System.String)
+  name: SetConsoleTitle(string)
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleTitle_System_String_
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitle(System.String)
+  name.vb: SetConsoleTitle(String)
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitle(string)
+  fullName.vb: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitle(String)
+  nameWithType: PInvokeService.SetConsoleTitle(string)
+  nameWithType.vb: PInvokeService.SetConsoleTitle(String)
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitle*
+  name: SetConsoleTitle
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleTitle_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitle
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitle
+  nameWithType: PInvokeService.SetConsoleTitle
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitleAsync(System.String,System.Threading.CancellationToken)
+  name: SetConsoleTitleAsync(string, CancellationToken)
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleTitleAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitleAsync(System.String,System.Threading.CancellationToken)
+  name.vb: SetConsoleTitleAsync(String, CancellationToken)
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitleAsync(string, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitleAsync(String, System.Threading.CancellationToken)
+  nameWithType: PInvokeService.SetConsoleTitleAsync(string, CancellationToken)
+  nameWithType.vb: PInvokeService.SetConsoleTitleAsync(String, CancellationToken)
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitleAsync*
+  name: SetConsoleTitleAsync
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleTitleAsync_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitleAsync
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleTitleAsync
+  nameWithType: PInvokeService.SetConsoleTitleAsync
