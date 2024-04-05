@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Coree.NETWindows.Services.PInvoke
 {
-    public partial class PInvokeService : DependencySingleton<PInvokeService>, IPInvokeService , IDependencySingleton
+    public partial class PInvokeService : DependencySingleton<PInvokeService>, IPInvokeService, IDependencySingleton
     {
         /// <summary>
         /// Synchronously disables the close button of the console window. This method internally
@@ -202,7 +202,7 @@ namespace Coree.NETWindows.Services.PInvoke
         /// <param name="consoleTitle">The new title for the console window.</param>
         public void SetConsoleTitle(string consoleTitle)
         {
-            SetConsoleTitleAsync(consoleTitle,CancellationToken.None).GetAwaiter().GetResult();
+            SetConsoleTitleAsync(consoleTitle, CancellationToken.None).GetAwaiter().GetResult();
         }
 
         /// <summary>
@@ -211,7 +211,7 @@ namespace Coree.NETWindows.Services.PInvoke
         /// <param name="consoleTitle">The new title for the console window.</param>
         /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
         /// <returns>A task representing the asynchronous operation.</returns>
-        public async Task SetConsoleTitleAsync(string consoleTitle,CancellationToken cancellationToken = default)
+        public async Task SetConsoleTitleAsync(string consoleTitle, CancellationToken cancellationToken = default)
         {
             try
             {
@@ -231,5 +231,35 @@ namespace Coree.NETWindows.Services.PInvoke
                 logger.LogError(ex, "Failed to set console title.");
             }
         }
+
+ 
+        private static void SetConsoleColor(ConsoleManagement.ConsoleColors foregroundColor, ConsoleManagement.ConsoleColors backgroundColor)
+        {
+            IntPtr consoleHandle = ConsoleManagement.GetStdHandle(ConsoleManagement.STD_OUTPUT_HANDLE);
+            ushort attributes = (ushort)((int)backgroundColor << 4 | (int)foregroundColor);
+
+            if (!ConsoleManagement.SetConsoleTextAttribute(consoleHandle, attributes))
+                throw new System.ComponentModel.Win32Exception(Marshal.GetLastWin32Error());
+        }
+
+        private static void SetConsoleColors(System.Drawing.Color screenTextColor, System.Drawing.Color screenBackgroundColor, System.Drawing.Color popupTextColor, System.Drawing.Color popupBackgroundColor)
+        {
+            IntPtr hConsoleOutput = ConsoleManagement.GetStdHandle(ConsoleManagement.STD_OUTPUT_HANDLE);
+            ConsoleManagement.CONSOLE_SCREEN_BUFFER_INFO_EX csbe = ConsoleManagement.CONSOLE_SCREEN_BUFFER_INFO_EX.Create();
+            ConsoleManagement.GetConsoleScreenBufferInfoEx(hConsoleOutput, ref csbe);
+
+            // Set the screen text and background colors
+            csbe.ColorTable[0] = new ConsoleManagement.COLORREF(screenBackgroundColor); // Background
+            csbe.ColorTable[15] = new ConsoleManagement.COLORREF(screenTextColor); // Foreground
+
+            // Set the popup text and background colors
+            csbe.ColorTable[1] = new ConsoleManagement.COLORREF(popupBackgroundColor); // Popup Background
+            csbe.ColorTable[14] = new ConsoleManagement.COLORREF(popupTextColor); // Popup Text
+
+            // Apply the changes
+            ConsoleManagement.SetConsoleScreenBufferInfoEx(hConsoleOutput, ref csbe);
+        }
+
+
     }
 }
