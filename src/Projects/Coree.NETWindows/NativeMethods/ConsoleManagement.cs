@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,7 @@ namespace Coree.NETWindows.NativeMethods
         internal static extern bool SetCurrentConsoleFontEx(IntPtr consoleOutput, bool maximumWindow, ref CONSOLE_FONT_INFOEX consoleFontInfo);
 
         [DllImport("kernel32.dll", SetLastError = true)]
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         internal static extern bool AllocConsole();
 
         [DllImport("kernel32.dll", SetLastError = true)]
