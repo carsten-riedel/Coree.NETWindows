@@ -25,6 +25,18 @@ namespace Coree.NETWindows.Services.PInvoke
         Task DisableCloseButtonAsync(CancellationToken cancellationToken = default);
 
         /// <summary>
+        /// Disables the quick edit mode of the console.
+        /// </summary>
+        void DisableQuickEditMode();
+
+        /// <summary>
+        /// Disables the quick edit mode of the console.
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
+        /// <returns>A task representing the asynchronous operation.</returns>
+        Task DisableQuickEditModeAsync(CancellationToken cancellationToken = default);
+
+        /// <summary>
         /// Sets the font of the console window synchronously.
         /// </summary>
         /// <param name="fontSize">The size of the font to set (default is 14).</param>
