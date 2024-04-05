@@ -169,11 +169,8 @@ namespace Coree.NETWindows.Services.PInvoke
         {
             try
             {
-                await Task.Run(() =>
-                {
-                    ConsoleManagement.AllocConsole();
-                }, cancellationToken);
-
+                ConsoleManagement.AllocConsole();
+                await Task.Delay(10, cancellationToken);
                 logger.LogTrace("Successfully allocated console.");
             }
             catch (OperationCanceledException)
