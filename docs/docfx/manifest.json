@@ -4,6 +4,36 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.ConsoleColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.ConsoleColors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.NativeMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.NativeMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETWindows.Services.PInvoke.IPInvokeService.yml",
       "output": {
         ".html": {
