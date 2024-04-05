@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Coree.NETWindows.NativeMethods
 {
-    public static partial class ConsoleManagement
+    internal static partial class ConsoleManagement
     {
         [DllImport("kernel32.dll", SetLastError = true)]
         internal static extern IntPtr GetConsoleWindow();
@@ -31,7 +31,7 @@ namespace Coree.NETWindows.NativeMethods
         internal static extern bool SetCurrentConsoleFontEx(IntPtr consoleOutput, bool maximumWindow, ref CONSOLE_FONT_INFOEX consoleFontInfo);
 
         [DllImport("kernel32.dll", SetLastError = true)]
-        public static extern bool AllocConsole();
+        internal static extern bool AllocConsole();
 
         [DllImport("kernel32.dll", SetLastError = true)]
         internal static extern bool FreeConsole();
