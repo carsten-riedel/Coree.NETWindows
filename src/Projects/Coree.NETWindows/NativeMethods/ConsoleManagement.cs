@@ -36,6 +36,9 @@ namespace Coree.NETWindows.NativeMethods
         [DllImport("kernel32.dll", SetLastError = true)]
         internal static extern bool FreeConsole();
 
+        [DllImport("kernel32.dll", SetLastError = true)]
+        internal static extern bool SetConsoleTitle(string lpConsoleTitle);
+
         [StructLayout(LayoutKind.Sequential)]
         public struct COORD
         {

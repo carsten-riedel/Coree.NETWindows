@@ -75,5 +75,19 @@ namespace Coree.NETWindows.Services.PInvoke
         /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
         /// <returns>A task representing the asynchronous operation.</returns>
         Task FreeConsoleAsync(CancellationToken cancellationToken = default);
+
+        /// <summary>
+        /// Sets the title of the console window.
+        /// </summary>
+        /// <param name="consoleTitle">The new title for the console window.</param>
+        void SetConsoleTitle(string consoleTitle);
+
+        /// <summary>
+        /// Sets the title of the console window.
+        /// </summary>
+        /// <param name="consoleTitle">The new title for the console window.</param>
+        /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
+        /// <returns>A task representing the asynchronous operation.</returns>
+         Task SetConsoleTitleAsync(string consoleTitle, CancellationToken cancellationToken = default);
     }
 }
