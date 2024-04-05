@@ -4,46 +4,6 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.CONSOLE_FONT_INFOEX.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.CONSOLE_FONT_INFOEX.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.COORD.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.COORD.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETWindows.NativeMethods.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETWindows.NativeMethods.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETWindows.Services.PInvoke.IPInvokeService.yml",
       "output": {
         ".html": {
