@@ -31,7 +31,7 @@ namespace Coree.NETWindows.NativeMethods
         internal static extern bool SetCurrentConsoleFontEx(IntPtr consoleOutput, bool maximumWindow, ref CONSOLE_FONT_INFOEX consoleFontInfo);
 
         [DllImport("kernel32.dll", SetLastError = true)]
-        internal static extern bool AllocConsole();
+        public static extern bool AllocConsole();
 
         [DllImport("kernel32.dll", SetLastError = true)]
         internal static extern bool FreeConsole();
