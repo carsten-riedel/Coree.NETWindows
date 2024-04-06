@@ -385,6 +385,32 @@ references:
   isSpec: "True"
   fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.FreeConsoleAsync
   nameWithType: PInvokeService.FreeConsoleAsync
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColor(Coree.NETWindows.NativeMethods.ConsoleManagement.ConsoleColors,Coree.NETWindows.NativeMethods.ConsoleManagement.ConsoleColors)
+  name: SetConsoleColor(ConsoleColors, ConsoleColors)
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleColor_Coree_NETWindows_NativeMethods_ConsoleManagement_ConsoleColors_Coree_NETWindows_NativeMethods_ConsoleManagement_ConsoleColors_
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColor(Coree.NETWindows.NativeMethods.ConsoleManagement.ConsoleColors,Coree.NETWindows.NativeMethods.ConsoleManagement.ConsoleColors)
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColor(Coree.NETWindows.NativeMethods.ConsoleManagement.ConsoleColors, Coree.NETWindows.NativeMethods.ConsoleManagement.ConsoleColors)
+  nameWithType: PInvokeService.SetConsoleColor(ConsoleManagement.ConsoleColors, ConsoleManagement.ConsoleColors)
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColor*
+  name: SetConsoleColor
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleColor_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColor
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColor
+  nameWithType: PInvokeService.SetConsoleColor
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColors(System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color)
+  name: SetConsoleColors(Color, Color, Color, Color)
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleColors_System_Drawing_Color_System_Drawing_Color_System_Drawing_Color_System_Drawing_Color_
+  commentId: M:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColors(System.Drawing.Color,System.Drawing.Color,System.Drawing.Color,System.Drawing.Color)
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColors(System.Drawing.Color, System.Drawing.Color, System.Drawing.Color, System.Drawing.Color)
+  nameWithType: PInvokeService.SetConsoleColors(Color, Color, Color, Color)
+- uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColors*
+  name: SetConsoleColors
+  href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleColors_
+  commentId: Overload:Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColors
+  isSpec: "True"
+  fullName: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleColors
+  nameWithType: PInvokeService.SetConsoleColors
 - uid: Coree.NETWindows.Services.PInvoke.PInvokeService.SetConsoleFont(System.Int16,System.String)
   name: SetConsoleFont(short, string)
   href: api/Coree.NETWindows.Services.PInvoke.PInvokeService.html#Coree_NETWindows_Services_PInvoke_PInvokeService_SetConsoleFont_System_Int16_System_String_
