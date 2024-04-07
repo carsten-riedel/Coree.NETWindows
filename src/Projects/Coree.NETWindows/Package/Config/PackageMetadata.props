@@ -26,7 +26,7 @@
     <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 
     <Description>
-     <![CDATA[.NetWindows library.]]>
+     <![CDATA[Coree.NETWindows is a comprehensive .NET Windows library streamlining coding tasks with its generic helpers. DocFX documentation is available, offering quick insights and examples for effective use.]]>
     </Description>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
