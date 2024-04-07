@@ -8,6 +8,6 @@ Coree.NETWindows is a comprehensive library that provides a wide range of generi
 
 As Coree.NETWindows is exclusively a library project, you can thoroughly explore its functionalities through the Docfx API documentation. This documentation is available in a Markdown format similar to this text, ensuring easy access and understanding for developers.
 
-[Coree.NETWindows Docfx API](https://carsten-riedel.github.io/Coree.NETWindows/docfx/api/Coree.NETStandard.Services.html)
+[Coree.NETWindows Docfx API](https://carsten-riedel.github.io/Coree.NETWindows/docfx/index.html)
 
 
