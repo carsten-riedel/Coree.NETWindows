@@ -21,8 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Coree.NET" Version="0.1.8826.11042" />
-    <PackageReference Include="Coree.NETStandard" Version="0.1.8861.32615" />
+    <PackageReference Include="Coree.NET" Version="0.1.8863.34589" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
