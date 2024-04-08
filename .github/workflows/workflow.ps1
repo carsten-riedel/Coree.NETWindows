@@ -235,6 +235,9 @@ dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
 Log-Block -Stage "Build" -Section "Docfx" -Task "Generating the docfx files."
 docfx src/Projects/Coree.NETWindows/Docfx/build/docfx_local.json
 
+Log-Block -Stage "Prepare" -Section "Configure" -Task "Adding addtional nuget sources"
+dotnet nuget add source --name nugettest "https://apiint.nugettest.org/v3/index.json"
+
 Log-Block -Stage "Copy files" -Section "Docfx" -Task "Copying files from the docfx output to docs/docfx"
 Copy-Directory -sourceDir "src/Projects/Coree.NETWindows/Docfx/result/local/" -destinationDir "docs/docfx" -exclusions @('.git', '.github')
 
