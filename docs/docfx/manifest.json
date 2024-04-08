@@ -3,6 +3,96 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.ConsoleColors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.ConsoleColors.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.NativeMethods.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.NativeMethods.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.Services.PInvoke.IPInvokeService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.Services.PInvoke.IPInvokeService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.Services.PInvoke.PInvokeService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.Services.PInvoke.PInvokeService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.Services.PInvoke.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.Services.PInvoke.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.Utilities.MainContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.Utilities.MainContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.Utilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "docs/getting-started.md",
       "output": {
