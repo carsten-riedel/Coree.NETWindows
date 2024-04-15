@@ -29,10 +29,12 @@
     <VersionBuild Condition="'$(VersionBuild)' == '0'">$(AssemblyVersionBuild)</VersionBuild>
     <VersionRevision Condition="'$(VersionRevision)' == '0'">$(AssemblyVersionRevision)</VersionRevision>
 
-    <VersionPrefix Condition="'$(VersionPrefix)' == ''">$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
     <VersionSuffix Condition="'$(VersionPrefix)' == ''">local</VersionSuffix>
+    <VersionPrefix Condition="'$(VersionPrefix)' == ''">$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
 
-    <PackageVersion Condition="'$(PackageVersion)' == ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
+    <PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' != ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
+    <PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' == ''">$(VersionPrefix)</PackageVersion>
+    
     <InformationalVersion>$(PackageVersion)</InformationalVersion>
     <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 
