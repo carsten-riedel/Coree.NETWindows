@@ -4,6 +4,46 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.Classes.GlobalHotkey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.Classes.GlobalHotkey.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.Classes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.Classes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.KeyModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.KeyModifier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.Keys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.Keys.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETWindows.NativeMethods.ConsoleManagement.ConsoleColors.yml",
       "output": {
         ".html": {
@@ -78,6 +118,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETWindows.Utilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETWindows.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETWindows.html"
         }
       },
       "version": ""
