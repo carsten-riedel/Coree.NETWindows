@@ -13,7 +13,11 @@
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
   <ItemGroup>
+    <None Remove="Classes\GlobalHotkey.cs" />
+    <None Remove="Enums\KeyModifier.cs" />
+    <None Remove="Enums\Keys.cs" />
     <None Remove="NativeMethods\ConsoleManagement.cs" />
+    <None Remove="NativeMethods\KeyboardManagement.cs" />
     <None Remove="Pinvoke.cs" />
     <None Remove="Services\PInvoke\DSPInvokeService.cs" />
     <None Remove="Services\PInvoke\IPInvokeService.cs" />
