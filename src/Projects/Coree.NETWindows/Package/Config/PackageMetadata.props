@@ -30,7 +30,7 @@
     <VersionRevision Condition="'$(VersionRevision)' == '0'">$(AssemblyVersionRevision)</VersionRevision>
 
     <VersionPrefix Condition="'$(VersionPrefix)' == ''">$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
-    <VersionSuffix Condition="'$(VersionSuffix)' == ''">local</VersionSuffix>
+    <VersionSuffix Condition="'$(VersionPrefix)' == ''">local</VersionSuffix>
 
     <PackageVersion Condition="'$(PackageVersion)' == ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
     <InformationalVersion>$(PackageVersion)</InformationalVersion>
