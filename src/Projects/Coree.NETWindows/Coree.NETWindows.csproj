@@ -26,12 +26,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Coree.NET" Version="0.1.8864.35012" />
+    <Folder Include="Docfx\build\api\" />
+    <Folder Include="Docfx\result\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Docfx\build\api\" />
-    <Folder Include="Docfx\result\" />
+    <PackageReference Include="Coree.NET" Version="0.1.8863.40029" />
   </ItemGroup>
 
 </Project>
