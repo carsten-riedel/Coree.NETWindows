@@ -7,6 +7,8 @@
     <DebugType>embedded</DebugType>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeReferencedProjects>true</IncludeReferencedProjects>
+    <NuspecProperties>$(NuspecProperties);configuration=$(Configuration)</NuspecProperties>
   </PropertyGroup>
 
   <!-- NuGet Package configuration -->
@@ -31,7 +33,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Coree.NET" Version="0.1.8863.40029" />
+    <PackageReference Include="Coree.NET" Version="0.1.8863.40029">
+    </PackageReference>
   </ItemGroup>
 
 </Project>
