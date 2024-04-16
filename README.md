@@ -1,6 +1,7 @@
 # Coree.NETWindows [![Master .NET](https://github.com/carsten-riedel/Coree.NETWindows/actions/workflows/builddeploy.yml/badge.svg?branch=master)](https://github.com/carsten-riedel/Coree.NETWindows/actions/workflows/builddeploy.yml) [![Nuget](https://img.shields.io/nuget/v/Coree.NETWindows?label=NuGet&labelColor=004880&logo=NuGet&logoColor=white)](https://www.nuget.org/packages/Coree.NETWindows)
 
 ![brand](https://raw.githubusercontent.com/carsten-riedel/Coree.NETWindows/master/images/brand.png)
+
 Coree.NETWindows is a comprehensive library that provides a wide range of generic helper functionalities, designed to enhance and simplify coding tasks across .NET Windows projects.
 
 ### Documentation
