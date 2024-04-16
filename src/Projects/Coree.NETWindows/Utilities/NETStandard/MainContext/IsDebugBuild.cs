@@ -23,7 +23,7 @@ namespace Coree.NETWindows.Utilities
         public static bool IsDebugBuild()
         {
             var assembly = Assembly.GetEntryAssembly();
-            var attributes = assembly.GetCustomAttributes(typeof(DebuggableAttribute), false) as DebuggableAttribute[];
+            var attributes = assembly?.GetCustomAttributes(typeof(DebuggableAttribute), false) as DebuggableAttribute[];
 
             if (attributes != null && attributes.Length > 0)
             {

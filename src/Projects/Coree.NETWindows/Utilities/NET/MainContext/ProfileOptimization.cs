@@ -15,8 +15,55 @@ namespace Coree.NETWindows.Utilities
         /// </remarks>
         public static void ProfileOptimization()
         {
-            System.Runtime.ProfileOptimization.SetProfileRoot(AppDomain.CurrentDomain.BaseDirectory);
-            System.Runtime.ProfileOptimization.StartProfile($@"{System.Reflection.Assembly.GetEntryAssembly().GetName().Name}.profile");
+            var primaryOrCallingAssembly = Assembly.GetEntryAssembly() ?? Assembly.GetCallingAssembly();
+            var assemblyName = primaryOrCallingAssembly.GetName().Name;
+            if (string.IsNullOrEmpty(assemblyName))
+            {
+                return;
+            }
+            assemblyName = $"{assemblyName}.profile";
+
+            // Define the potential profile locations
+            string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            string localAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+
+            if (string.IsNullOrEmpty(baseDirectory) || string.IsNullOrEmpty(localAppData))
+            {
+                return;
+            }
+
+            string[] possibleLocations = {
+                    Path.Combine(baseDirectory, assemblyName),
+                    Path.Combine(localAppData, assemblyName)
+                };
+
+            foreach (var profileLocation in possibleLocations)
+            {
+                try
+                {
+                    string? directory = Path.GetDirectoryName(profileLocation);
+                    if (string.IsNullOrEmpty(directory))
+                    {
+                        continue;
+                    }
+
+                    if (!Directory.Exists(directory))
+                    {
+                        Directory.CreateDirectory(directory);
+                    }
+
+                    File.WriteAllBytes(profileLocation, Array.Empty<byte>());
+                    File.Delete(profileLocation);
+
+                    System.Runtime.ProfileOptimization.SetProfileRoot(directory);
+                    System.Runtime.ProfileOptimization.StartProfile(Path.GetFileName(profileLocation));
+                    return;
+                }
+                catch (Exception)
+                {
+                    continue;
+                }
+            }
         }
     }
 }
