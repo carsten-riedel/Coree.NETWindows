@@ -244,18 +244,54 @@ function Get-GitRemoteOriginUrl {
     }
 }
 
+
+
+<# 
+.SYNOPSIS
+Executes a specified command and checks if the exit code is one of the expected codes.
+
+.DESCRIPTION
+The function executes a command using Invoke-Expression. It throws an error if the exit code of the command is not within the specified expected codes.
+
+.PARAMETER Command
+The command string to be executed.
+
+.PARAMETER ExpectedExitCodes
+An array of integers specifying acceptable exit codes. Defaults to 0.
+
+.EXAMPLE
+Execute-Command "ping 8.8.8.8"
+This example executes the ping command and checks if the exit code is 0.
+
+.EXAMPLE
+Execute-Command "ping 8.8.8.8" -ExpectedExitCodes 0,1
+This example executes the ping command and checks if the exit code is either 0 or 1.
+#>
 function Execute-Command {
+    [CmdletBinding()]
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseApprovedVerbs", "")]
     param (
-        [string]$Command
+        [string]$Command,
+        [int[]]$ExpectedExitCodes = @(0)
     )
+
 
     # Output the command being executed for transparency
     Write-Output "Executing command: $Command"
 
     # Execute the command using Invoke-Expression
     Invoke-Expression -Command $Command
+
+    # Check if the exit code is not in the expected array
+    if (-not $ExpectedExitCodes.Contains($LASTEXITCODE)) {
+        throw "Unexpected exit code: $($LASTEXITCODE). Expected: $($ExpectedExitCodes -join ', ')"
+    }
+    else {
+        Write-Output "Expected  exit code: $($LASTEXITCODE)"
+    }
 }
+
+
 
 function Ensure-VariableSet {
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseApprovedVerbs", "")]
@@ -339,7 +375,8 @@ function Remove-FilesAndDirectories {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true)]
-        [string]$FolderPath  # The root path where the cleanup will begin
+        [string]$FolderPath,  # The root path where the cleanup will begin
+        [bool]$DumpDeleted = $true
     )
 
     # Internal function to recursively delete files
@@ -355,7 +392,10 @@ function Remove-FilesAndDirectories {
         foreach ($file in $files) {
             try {
                 $file | Remove-Item -Force -ErrorAction Stop
-                Write-Host "Deleted file: $($file.FullName)"
+                if ($DumpDeleted)
+                {
+                    Write-Host "Deleted file: $($file.FullName)"
+                }
             } catch {
                 Write-Host "Failed to delete file: $($file.FullName)"
             }
@@ -378,7 +418,10 @@ function Remove-FilesAndDirectories {
             Delete-Directories -Path $dir.FullName
             try {
                 $dir | Remove-Item -Force -Recurse -ErrorAction Stop
-                Write-Host "Deleted directory: $($dir.FullName)"
+                if ($DumpDeleted)
+                {
+                    Write-Host "Deleted directory: $($dir.FullName)"
+                }
             } catch {
                 Write-Host "Failed to delete directory: $($dir.FullName)"
             }

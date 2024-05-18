@@ -25,15 +25,8 @@
     <None Remove="Services\PInvoke\PInvokeService.cs" />
     <None Remove="Utilities\NETWindows\MainContext\AllocConsole.cs" />
   </ItemGroup>
-
   <ItemGroup>
-    <Folder Include="Docfx\build\api\" />
-    <Folder Include="Docfx\result\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Coree.NET" Version="0.1.8863.40029">
-    </PackageReference>
+    <PackageReference Include="Coree.NET" Version="0.1.8904.15972" />
   </ItemGroup>
 
 </Project>

@@ -4,14 +4,13 @@
       "noRestore": true,
       "src": [
         {
-          "src": "../../../Coree.NETWindows",
+          "src": "../../src/Projects/Coree.NET",
           "files": [
             "**/*.csproj"
           ]
         }
       ],
-      "dest": "api",
-      "filter": "filterConfig.yml"
+      "dest": "api"
     }
   ],
   "build": {
@@ -35,8 +34,8 @@
       "../_exported_templates/override"
     ],
     "globalMetadata": {
-      "_appName": "Coree.NETWindows",
-      "_appTitle": "Coree.NETWindows",
+      "_appName": "Coree.NET",
+      "_appTitle": "Coree.NET",
       "_appFooter": "<pre></pre>"
     }
   }
