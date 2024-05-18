@@ -4,7 +4,7 @@
       "noRestore": true,
       "src": [
         {
-          "src": "../../src/Projects/Coree.NET",
+          "src": "../../src/Projects/Coree.NETWindows",
           "files": [
             "**/*.csproj"
           ]
@@ -34,8 +34,8 @@
       "../_exported_templates/override"
     ],
     "globalMetadata": {
-      "_appName": "Coree.NET",
-      "_appTitle": "Coree.NET",
+      "_appName": "Coree.NETWindows",
+      "_appTitle": "Coree.NETWindows",
       "_appFooter": "<pre></pre>"
     }
   }
