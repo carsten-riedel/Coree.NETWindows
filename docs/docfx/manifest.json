@@ -1,5 +1,5 @@
 {
-  "source_base_path": "/home/runner/work/Coree.NETWindows/Coree.NETWindows/src/Projects/Coree.NETWindows/Docfx/build",
+  "source_base_path": "/home/runner/work/Coree.NETWindows/Coree.NETWindows/docfx/build",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
