@@ -2,6 +2,7 @@
 using System.Runtime.InteropServices;
 
 using Coree.NETStandard.Abstractions;
+using Coree.NETStandard.Abstractions.DependencySingleton;
 using Coree.NETWindows.NativeMethods;
 
 using Microsoft.Extensions.Logging;
