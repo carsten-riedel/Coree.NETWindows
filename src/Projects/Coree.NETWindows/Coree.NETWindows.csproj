@@ -26,7 +26,7 @@
     <None Remove="Utilities\NETWindows\MainContext\AllocConsole.cs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Coree.NET" Version="0.1.8904.15972" />
+    <PackageReference Include="Coree.NET" Version="0.1.8904.17998" />
   </ItemGroup>
 
 </Project>
