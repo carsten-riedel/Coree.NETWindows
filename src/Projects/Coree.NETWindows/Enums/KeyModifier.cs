@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Coree.NETWindows
+﻿namespace Coree.NETWindows
 {
     /// <summary>
     /// Defines keyboard modifiers that can be combined using bitwise operations to represent multiple modifiers for a hotkey.
@@ -38,5 +31,4 @@ namespace Coree.NETWindows
         /// </summary>
         WinKey = 0x0008
     }
-
 }

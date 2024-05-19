@@ -20,9 +20,15 @@
     <None Remove="NativeMethods\ConsoleManagement.cs" />
     <None Remove="NativeMethods\KeyboardManagement.cs" />
     <None Remove="Pinvoke.cs" />
-    <None Remove="Services\PInvoke\DSPInvokeService.cs" />
-    <None Remove="Services\PInvoke\IPInvokeService.cs" />
-    <None Remove="Services\PInvoke\PInvokeService.cs" />
+    <None Remove="Services\PInvokeService\AllocConsole.cs" />
+    <None Remove="Services\PInvokeService\DisableCloseButton.cs" />
+    <None Remove="Services\PInvokeService\DisableQuickEditMode.cs" />
+    <None Remove="Services\PInvokeService\FreeConsole.cs" />
+    <None Remove="Services\PInvokeService\IPInvokeService.cs" />
+    <None Remove="Services\PInvokeService\PInvokeService.cs" />
+    <None Remove="Services\PInvokeService\SetConsoleColor.cs" />
+    <None Remove="Services\PInvokeService\SetConsoleFont.cs" />
+    <None Remove="Services\PInvokeService\SetConsoleTitle.cs" />
     <None Remove="Utilities\NETWindows\MainContext\AllocConsole.cs" />
   </ItemGroup>
   <ItemGroup>

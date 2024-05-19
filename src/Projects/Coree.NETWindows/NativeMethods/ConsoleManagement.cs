@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
+﻿using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-
-using Coree.NETWindows.Classes;
 
 namespace Coree.NETWindows.NativeMethods
 {
@@ -152,38 +145,52 @@ namespace Coree.NETWindows.NativeMethods
         {
             /// <summary>Black color.</summary>
             Black = 0,
+
             /// <summary>Dark blue color.</summary>
             DarkBlue = 1,
+
             /// <summary>Dark green color.</summary>
             DarkGreen = 2,
+
             /// <summary>Dark cyan color, a blend of dark blue and dark green.</summary>
             DarkCyan = 3,
+
             /// <summary>Dark red color.</summary>
             DarkRed = 4,
+
             /// <summary>Dark magenta color, a blend of dark red and dark blue.</summary>
             DarkMagenta = 5,
+
             /// <summary>Dark yellow color, a darker shade of yellow.</summary>
             DarkYellow = 6,
+
             /// <summary>Gray color, a light shade of black.</summary>
             Gray = 7,
+
             /// <summary>Dark gray color, a shade between black and gray.</summary>
             DarkGray = 8,
+
             /// <summary>Bright blue color.</summary>
             Blue = 9,
+
             /// <summary>Bright green color.</summary>
             Green = 10,
+
             /// <summary>Cyan color, a blend of blue and green.</summary>
             Cyan = 11,
+
             /// <summary>Red color.</summary>
             Red = 12,
+
             /// <summary>Magenta color, a blend of red and blue.</summary>
             Magenta = 13,
+
             /// <summary>Yellow color.</summary>
             Yellow = 14,
+
             /// <summary>White color, the combination of all color light.</summary>
             White = 15
         }
-
 
         internal const uint SC_CLOSE = 0xF060;
         internal const uint MF_BYCOMMAND = 0x00000000;

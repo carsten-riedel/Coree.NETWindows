@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-
-using Coree.NETWindows.NativeMethods;
+﻿using Coree.NETWindows.NativeMethods;
 
 namespace Coree.NETWindows.Utilities
 {
@@ -21,7 +13,7 @@ namespace Coree.NETWindows.Utilities
         /// <returns>A boolean value indicating whether the operation was successful.</returns>
         public static bool AllocConsole()
         {
-           return ConsoleManagement.AllocConsole();
+            return ConsoleManagement.AllocConsole();
         }
     }
 }

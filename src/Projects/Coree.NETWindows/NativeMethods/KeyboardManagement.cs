@@ -1,14 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-
-
-using static System.Collections.Specialized.BitVector32;
+﻿using System.Runtime.InteropServices;
 
 namespace Coree.NETWindows.NativeMethods
 {
@@ -25,7 +15,4 @@ namespace Coree.NETWindows.NativeMethods
 
         internal const int WM_HOTKEY = 0x0312;
     }
-
-
-
 }

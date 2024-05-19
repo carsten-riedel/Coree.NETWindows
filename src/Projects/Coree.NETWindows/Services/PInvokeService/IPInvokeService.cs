@@ -1,18 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Microsoft.Extensions.Logging;
-
-namespace Coree.NETWindows.Services.PInvoke
+﻿namespace Coree.NETWindows.Services.PInvokeService
 {
-
     /// <summary>
     /// Represents the interface for invoking platform (P/Invoke) methods.
     /// </summary>
-    public interface IPInvokeService 
+    public interface IPInvokeService
     {
         /// <summary>
         /// Disables the close button of the current window using platform-specific methods.
@@ -78,6 +69,6 @@ namespace Coree.NETWindows.Services.PInvoke
         /// <param name="consoleTitle">The new title for the console window.</param>
         /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
         /// <returns>A task representing the asynchronous operation.</returns>
-         Task SetConsoleTitleAsync(string consoleTitle, CancellationToken cancellationToken = default);
+        Task SetConsoleTitleAsync(string consoleTitle, CancellationToken cancellationToken = default);
     }
 }
