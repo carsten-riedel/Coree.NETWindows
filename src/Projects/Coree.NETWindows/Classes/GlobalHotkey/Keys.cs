@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 #pragma warning disable CA1069
 
-namespace Coree.NETWindows
+namespace Coree.NETWindows.Classes.GlobalHotkey
 {
     /// <summary>
     /// Defines keyboard modifiers that can be combined using bitwise operations to represent multiple modifiers for a hotkey.

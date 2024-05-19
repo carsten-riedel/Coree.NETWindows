@@ -15,10 +15,9 @@
   <Import Project="Package/Config/PackageSpecs.props" />
   <ItemGroup>
     <None Remove="Classes\GlobalHotkey.cs" />
-    <None Remove="Enums\KeyModifier.cs" />
-    <None Remove="Enums\Keys.cs" />
     <None Remove="NativeMethods\ConsoleManagement.cs" />
     <None Remove="NativeMethods\KeyboardManagement.cs" />
+    <None Remove="NativeMethods\WindowManagement.cs" />
     <None Remove="Pinvoke.cs" />
     <None Remove="Services\PInvokeService\AllocConsole.cs" />
     <None Remove="Services\PInvokeService\DisableCloseButton.cs" />

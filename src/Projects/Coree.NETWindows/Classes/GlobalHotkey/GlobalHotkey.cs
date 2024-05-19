@@ -1,6 +1,6 @@
 ﻿using Coree.NETWindows.NativeMethods;
 
-namespace Coree.NETWindows.Classes
+namespace Coree.NETWindows.Classes.GlobalHotkey
 {
     /// <summary>
     /// Manages a global hotkey registration that allows for handling key events system-wide.
@@ -44,7 +44,7 @@ namespace Coree.NETWindows.Classes
         /// <param name="autoRegister">Whether to automatically register the hotkey after initialization.</param>
         public GlobalHotkey(IntPtr handle, int key, int modifier, Action? action, bool autoRegister = true)
         {
-            Init(handle, (Coree.NETWindows.Keys)key, (Coree.NETWindows.KeyModifier)modifier, action, autoRegister);
+            Init(handle, (Coree.NETWindows.Classes.GlobalHotkey.Keys)key, (Coree.NETWindows.Classes.GlobalHotkey.KeyModifier)modifier, action, autoRegister);
         }
 
         /// <summary>
