@@ -21,6 +21,8 @@
     <None Remove="Pinvoke.cs" />
     <None Remove="Services\PInvokeService\AllocConsole.cs" />
     <None Remove="Services\PInvokeService\DisableCloseButton.cs" />
+    <None Remove="Services\PInvokeService\DisableMaximizeButton.cs" />
+    <None Remove="Services\PInvokeService\DisableMinimizeButton.cs" />
     <None Remove="Services\PInvokeService\DisableQuickEditMode.cs" />
     <None Remove="Services\PInvokeService\FreeConsole.cs" />
     <None Remove="Services\PInvokeService\IPInvokeService.cs" />

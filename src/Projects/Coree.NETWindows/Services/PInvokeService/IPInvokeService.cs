@@ -5,6 +5,15 @@
     /// </summary>
     public interface IPInvokeService
     {
+
+        void DisableMinimizeButton();
+
+        Task DisableMinimizeButtonAsync(CancellationToken cancellationToken = default);
+
+        void DisableMaximizeButton();
+
+        Task DisableMaximizeButtonAsync(CancellationToken cancellationToken = default);
+
         /// <summary>
         /// Disables the close button of the current window using platform-specific methods.
         /// </summary>

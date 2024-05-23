@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -75,11 +77,11 @@ namespace Coree.NETWindows.NativeMethods
             {
                 get { return Bottom - Top; }
             }
+
             public Rectangle ToRectangle()
             {
                 return new Rectangle(this.X, this.Y, this.Width, this.Height);
             }
-
         }
 
         /// <summary>
@@ -111,7 +113,6 @@ namespace Coree.NETWindows.NativeMethods
                 throw new InvalidOperationException("Failed to get client rectangle");
             }
         }
-
 
         [DllImport("user32.dll", SetLastError = true)]
         [return: MarshalAs(UnmanagedType.Bool)]
@@ -183,7 +184,6 @@ namespace Coree.NETWindows.NativeMethods
         }
     }
 
-
     public static partial class DrawManagement
     {
         /// <summary>
@@ -216,7 +216,7 @@ namespace Coree.NETWindows.NativeMethods
 
         public static void DrawRECTOnDesktop2(WindowManagement.RECT rECT, Color color)
         {
-            DrawLineOnDesktop2( rECT.Left, rECT.Top, rECT.Right - rECT.Left, rECT.Bottom - rECT.Top, color, 1);
+            DrawLineOnDesktop2(rECT.Left, rECT.Top, rECT.Right - rECT.Left, rECT.Bottom - rECT.Top, color, 1);
         }
 
         public static void DrawRECTOnDesktop2(int startX, int startY, int witdh, int height, Color color)
@@ -244,4 +244,325 @@ namespace Coree.NETWindows.NativeMethods
         }
     }
 
+    public class MonitorManager3
+    {
+        [StructLayout(LayoutKind.Sequential, CharSet = CharSet.Ansi)]
+        public struct MonitorInfoExA
+        {
+            public int cbSize;
+            public RECT rcMonitor;
+            public RECT rcWork;
+            public int dwFlags;
+
+            [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 32)]
+            public string szDevice;
+
+            public MonitorInfoExA()
+            {
+                cbSize = Marshal.SizeOf(typeof(MonitorInfoExA));
+                rcMonitor = new RECT();
+                rcWork = new RECT();
+                dwFlags = 0;
+                szDevice = string.Empty;
+            }
+        }
+
+        [StructLayout(LayoutKind.Sequential)]
+        public struct RECT
+        {
+            public int left;
+            public int top;
+            public int right;
+            public int bottom;
+        }
+
+        private const int MONITORINFOF_PRIMARY = 1;
+
+        public class MonitorDetails
+        {
+            public string DeviceName { get; set; }
+            public RECT Coordinates { get; set; }
+            public RECT WorkArea { get; set; }
+            public int Flags { get; set; }
+            public bool IsPrimary => (Flags & MONITORINFOF_PRIMARY) != 0;
+
+            public override string ToString()
+            {
+                return $"Device: {DeviceName}, Primary: {IsPrimary}, Coordinates: ({Coordinates.left}, {Coordinates.top}, {Coordinates.right}, {Coordinates.bottom}), Work Area: ({WorkArea.left}, {WorkArea.top}, {WorkArea.right}, {WorkArea.bottom}), Flags: {Flags}";
+            }
+        }
+
+        [DllImport("user32.dll", CharSet = CharSet.Ansi)]
+        private static extern bool GetMonitorInfo(IntPtr hMonitor, ref MonitorInfoExA lpmi);
+
+        [DllImport("user32.dll")]
+        private static extern bool EnumDisplayMonitors(IntPtr hdc, IntPtr lprcClip, MonitorEnumDelegate lpfnEnum, IntPtr dwData);
+
+        private delegate bool MonitorEnumDelegate(IntPtr hMonitor, IntPtr hdcMonitor, ref RECT lprcMonitor, IntPtr dwData);
+
+        private static List<MonitorDetails> monitors = new List<MonitorDetails>();
+
+        private static bool MonitorEnumProc(IntPtr hMonitor, IntPtr hdcMonitor, ref RECT lprcMonitor, IntPtr dwData)
+        {
+            MonitorInfoExA mi = new MonitorInfoExA();
+            if (GetMonitorInfo(hMonitor, ref mi))
+            {
+                monitors.Add(new MonitorDetails
+                {
+                    DeviceName = mi.szDevice,
+                    Coordinates = mi.rcMonitor,
+                    WorkArea = mi.rcWork,
+                    Flags = mi.dwFlags
+                });
+            }
+            return true; // Continue enumeration
+        }
+
+        public static List<MonitorDetails> EnumerateMonitors()
+        {
+            monitors.Clear();
+            EnumDisplayMonitors(IntPtr.Zero, IntPtr.Zero, MonitorEnumProc, IntPtr.Zero);
+            return monitors;
+        }
+    }
+
+    public class PositionManager
+    {
+
+        public enum Posi
+        {
+            BottomLeft,
+            BottomRight,
+            TopLeft,
+            TopRight,
+        }
+
+        public static void Pos(IntPtr Handle,Posi posi, int Width, int Height)
+        {
+            var monitorDetails = MonitorManager3.EnumerateMonitors().First(e => e.IsPrimary == true);
+            switch (posi)
+            {
+                case Posi.BottomLeft:
+                    WindowManagement.MoveWin(Handle, monitorDetails.WorkArea.left + 0, monitorDetails.WorkArea.bottom - Height, Width, Height, true);
+                    break;
+                case Posi.BottomRight:
+                    WindowManagement.MoveWin(Handle, monitorDetails.WorkArea.right -Width, monitorDetails.WorkArea.bottom - Height, Width, Height, true);
+                    break;
+                case Posi.TopLeft:
+                    WindowManagement.MoveWin(Handle, monitorDetails.WorkArea.left, monitorDetails.WorkArea.top, Width, Height, true);
+                    break;
+                case Posi.TopRight:
+                    WindowManagement.MoveWin(Handle, monitorDetails.WorkArea.right - Width, monitorDetails.WorkArea.top, Width, Height, true);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        public static void ConsolePos(Posi posi, int Width, int Height)
+        {
+
+            Pos(ConsoleManagement.GetConsoleWindow(), posi, Width, Height);
+        }
+    }
+
+
+
+    public class TopMostManager
+    {
+        [DllImport("kernel32.dll")]
+        private static extern IntPtr GetConsoleWindow();
+
+        [DllImport("user32.dll")]
+        private static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+
+        [DllImport("user32.dll")]
+        private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+
+        [DllImport("user32.dll")]
+        private static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
+
+        private const int SWP_NOSIZE = 0x0001;
+        private const int SWP_NOMOVE = 0x0002;
+        private const int GWL_EXSTYLE = -20;
+        private const int WS_EX_TOPMOST = 0x00000008;
+        private static readonly IntPtr HWND_TOPMOST = new IntPtr(-1);
+
+        /// <summary>
+        /// Sets the console window to be top-most using the WS_EX_TOPMOST style.
+        /// </summary>
+        /// <remarks>
+        /// This method retrieves the handle of the console window and modifies its extended window styles to include WS_EX_TOPMOST.
+        /// It then positions the console window above other standard windows. This change might affect user interaction with other applications.
+        /// </remarks>
+        public static void SetConsoleWindowTopMost()
+        {
+            IntPtr consoleWindow = GetConsoleWindow();
+            int style = GetWindowLong(consoleWindow, GWL_EXSTYLE);
+            SetWindowLong(consoleWindow, GWL_EXSTYLE, style | WS_EX_TOPMOST);
+            SetWindowPos(consoleWindow, HWND_TOPMOST, 0, 0, 0, 0, SWP_NOMOVE | SWP_NOSIZE);
+
+            Console.WriteLine("Console window set to top-most.");
+        }
+    }
+
+    public class ConsoleResizeHelper
+    {
+        [DllImport("kernel32.dll")]
+        private static extern IntPtr GetConsoleWindow();
+
+        [DllImport("user32.dll")]
+        private static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+
+        [DllImport("user32.dll")]
+        private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+
+        private const int GWL_EXSTYLE = -20;
+        private const int GWL_STYLE = -16;
+        private const int WS_THICKFRAME = 0x00040000;
+
+        /// <summary>
+        /// Modifies the console window's extended style to hide its taskbar icon.
+        /// </summary>
+        /// <remarks>
+        /// This method alters the extended window style to avoid the console window appearing in the taskbar by setting it as a tool window.
+        /// </remarks>
+        public static void UnResizeable()
+        {
+            IntPtr consoleWindow = GetConsoleWindow();
+            int style = GetWindowLong(consoleWindow, GWL_STYLE);
+            SetWindowLong(consoleWindow, GWL_STYLE, style & ~WS_THICKFRAME);
+        }
+    }
+
+    public class RemoveFromTaskbarListManager
+    {
+        [DllImport("kernel32.dll")]
+        public static extern IntPtr GetConsoleWindow();
+
+        [DllImport("ole32.dll")]
+        private static extern int CoCreateInstance(ref Guid clsid, IntPtr pUnkOuter, int dwClsContext, ref Guid riid, [MarshalAs(UnmanagedType.IUnknown)] out object ppvObject);
+
+        [DllImport("ole32.dll")]
+        private static extern void CoInitialize(IntPtr pvReserved);
+
+        [DllImport("ole32.dll")]
+        private static extern void CoUninitialize();
+
+        [ComImport]
+        [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+        [Guid("56FDF342-FD6D-11D0-958A-006097C9A090")]
+        private interface ITaskbarList
+        {
+            void HrInit();
+
+            void AddTab(IntPtr hwnd);
+
+            void DeleteTab(IntPtr hwnd);
+
+            void ActivateTab(IntPtr hwnd);
+
+            void SetActiveAlt(IntPtr hwnd);
+        }
+
+        public static void ShowTaskbarIcon(IntPtr windowHandle)
+        {
+            Guid CLSID_TaskbarList = new Guid("56FDF344-FD6D-11D0-958A-006097C9A090");
+            Guid IID_ITaskbarList = new Guid("56FDF342-FD6D-11D0-958A-006097C9A090");
+            CoInitialize(IntPtr.Zero);
+            try
+            {
+                object taskListObj;
+                int result = CoCreateInstance(ref CLSID_TaskbarList, IntPtr.Zero, 1, ref IID_ITaskbarList, out taskListObj);
+                if (result == 0)
+                {
+                    var taskList = (ITaskbarList)taskListObj;
+                    taskList.AddTab(windowHandle);
+                    Marshal.ReleaseComObject(taskList);
+                }
+            }
+            finally
+            {
+                CoUninitialize();
+            }
+        }
+
+        public static void HideTaskbarIcon(IntPtr windowHandle)
+        {
+            Guid CLSID_TaskbarList = new Guid("56FDF344-FD6D-11D0-958A-006097C9A090");
+            Guid IID_ITaskbarList = new Guid("56FDF342-FD6D-11D0-958A-006097C9A090");
+            CoInitialize(IntPtr.Zero);
+            try
+            {
+                object taskListObj;
+                int result = CoCreateInstance(ref CLSID_TaskbarList, IntPtr.Zero, 1, ref IID_ITaskbarList, out taskListObj);
+                if (result == 0)
+                {
+                    var taskList = (ITaskbarList)taskListObj;
+                    taskList.DeleteTab(windowHandle);
+                    Marshal.ReleaseComObject(taskList);
+                }
+            }
+            finally
+            {
+                CoUninitialize();
+            }
+        }
+    }
+
+    public class ConsoleRemoveTitleNoMoveWindowManager
+    {
+        private const int GWL_STYLE = -16;
+        private const int WS_CAPTION = 0xC00000;
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        private static extern IntPtr GetConsoleWindow();
+
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+
+        public static void FixConsoleWindow()
+        {
+            IntPtr consoleWindowHandle = GetConsoleWindow();
+            int currentStyle = GetWindowLong(consoleWindowHandle, GWL_STYLE);
+            SetWindowLong(consoleWindowHandle, GWL_STYLE, currentStyle & ~WS_CAPTION);
+        }
+    }
+
+    public class ConsoleTransprentWindowManager
+    {
+        private const int GWL_EXSTYLE = -20;
+        private const int WS_EX_LAYERED = 0x80000;
+        private const int LWA_ALPHA = 0x2;
+
+        [DllImport("kernel32.dll", SetLastError = true)]
+        private static extern IntPtr GetConsoleWindow();
+
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern int GetWindowLong(IntPtr hWnd, int nIndex);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern int SetWindowLong(IntPtr hWnd, int nIndex, int dwNewLong);
+
+        [DllImport("user32.dll", SetLastError = true)]
+        private static extern bool SetLayeredWindowAttributes(IntPtr hWnd, uint crKey, byte bAlpha, uint dwFlags);
+
+        public static void MakeWindowTransparent(byte transparency)
+        {
+            IntPtr consoleWindowHandle = GetConsoleWindow();
+
+            // Get the current window style
+            int currentStyle = GetWindowLong(consoleWindowHandle, GWL_EXSTYLE);
+
+            // Set window to layered to change transparency
+            SetWindowLong(consoleWindowHandle, GWL_EXSTYLE, currentStyle | WS_EX_LAYERED);
+
+            // Set transparency level: 0 (fully transparent) to 255 (opaque)
+            SetLayeredWindowAttributes(consoleWindowHandle, 0, transparency, LWA_ALPHA);
+        }
+
+    }
 }

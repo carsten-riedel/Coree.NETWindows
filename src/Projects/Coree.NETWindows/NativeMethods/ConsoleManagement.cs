@@ -193,6 +193,9 @@ namespace Coree.NETWindows.NativeMethods
         }
 
         internal const uint SC_CLOSE = 0xF060;
+        internal const uint SC_MINIMIZE = 0xF020;
+        internal const uint SC_MAXIMIZE = 0xF030;
+
         internal const uint MF_BYCOMMAND = 0x00000000;
         internal const int STD_INPUT_HANDLE = -10;
         internal const int STD_OUTPUT_HANDLE = -11;
