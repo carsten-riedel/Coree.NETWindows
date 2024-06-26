@@ -17,6 +17,7 @@
     <None Remove="Classes\GlobalHotkey.cs" />
     <None Remove="NativeMethods\ConsoleManagement.cs" />
     <None Remove="NativeMethods\KeyboardManagement.cs" />
+    <None Remove="NativeMethods\ProcessManagment.cs" />
     <None Remove="NativeMethods\WindowManagement.cs" />
     <None Remove="Pinvoke.cs" />
     <None Remove="Services\PInvokeService\AllocConsole.cs" />

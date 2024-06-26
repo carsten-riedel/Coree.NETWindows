@@ -1,50 +1,55 @@
 <Project>
 
-  <!-- Package metadata-->
-  <!-- https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
+	<!-- Package metadata-->
+	<!-- https://learn.microsoft.com/en-us/nuget/create-packages/package-authoring-best-practices -->
 
-  <PropertyGroup>
-    <Authors>Carsten Riedel</Authors>
-    <Owners>Carsten Riedel</Owners>
-    <Company></Company>
-    <Copyright>Copyright © 2024 Carsten Riedel</Copyright>
-    <PackageId>Coree.NETWindows</PackageId>
-    <PackageTags>dotnet;class;library</PackageTags>
-    <PackageProjectUrl>https://github.com/carsten-riedel/Coree.NETWindows</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/carsten-riedel/Coree.NETWindows</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
+	<PropertyGroup>
+		<Authors>Carsten Riedel</Authors>
+		<Owners>Carsten Riedel</Owners>
+		<Company></Company>
+		<Copyright>Copyright © 2024 Carsten Riedel</Copyright>
+		<PackageId>Coree.NETWindows</PackageId>
+		<PackageTags>dotnet;class;library</PackageTags>
+		<PackageProjectUrl>https://github.com/carsten-riedel/Coree.NETWindows</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/carsten-riedel/Coree.NETWindows</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
 
-    <VersionMajor Condition="'$(VersionPrefix)' == ''">0</VersionMajor>
-    <VersionMinor Condition="'$(VersionPrefix)' == ''">1</VersionMinor>
-    <VersionBuild Condition="'$(VersionPrefix)' == ''">0</VersionBuild>
-    <VersionRevision Condition="'$(VersionPrefix)' == ''">0</VersionRevision>
+		<Description>
+			<![CDATA[Coree.NETWindows is a comprehensive .NET Windows library streamlining coding tasks with its generic helpers. DocFX documentation is available, offering quick insights and examples for effective use.]]>
+		</Description>
+		<PackageReadmeFile>Readme.md</PackageReadmeFile>
+		<PackageLicenseFile>License.txt</PackageLicenseFile>
+		<PackageIcon>Icon.png</PackageIcon>
+		<PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildThisFileDirectory)ReleaseNotes.txt"))</PackageReleaseNotes>
+	</PropertyGroup>
 
-    <AssemblyVersionBaseTicks>$([MSBuild]::Subtract($([System.DateTime]::UtcNow.Ticks), 630822816000000000))</AssemblyVersionBaseTicks>
-    <TicksPerDay>$([System.TimeSpan]::TicksPerDay)</TicksPerDay>
-    <TicksPerSecond>$([System.TimeSpan]::TicksPerSecond)</TicksPerSecond>
-    <AssemblyVersionBuild>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerDay)))))</AssemblyVersionBuild>
-    <AssemblyVersionTotalSeconds>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerSecond)))))</AssemblyVersionTotalSeconds>
-    <AssemblyVersionRemainingSeconds>$([System.Math]::Truncate($([MSBuild]::Modulo($(AssemblyVersionTotalSeconds), 86400))))</AssemblyVersionRemainingSeconds>
-    <AssemblyVersionRevision>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionRemainingSeconds), 2))))</AssemblyVersionRevision>
-    <VersionBuild Condition="'$(VersionBuild)' == '0'">$(AssemblyVersionBuild)</VersionBuild>
-    <VersionRevision Condition="'$(VersionRevision)' == '0'">$(AssemblyVersionRevision)</VersionRevision>
+	<Target Name="v" BeforeTargets="CoreCompile;Publish">
+		<PropertyGroup>
+			<VersionMajor Condition="'$(VersionPrefix)' == ''">0</VersionMajor>
+			<VersionMinor Condition="'$(VersionPrefix)' == ''">1</VersionMinor>
+			<VersionBuild Condition="'$(VersionPrefix)' == ''">0</VersionBuild>
+			<VersionRevision Condition="'$(VersionPrefix)' == ''">0</VersionRevision>
 
-    <VersionSuffix Condition="'$(VersionPrefix)' == ''">local</VersionSuffix>
-    <VersionPrefix Condition="'$(VersionPrefix)' == ''">$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
+			<AssemblyVersionBaseTicks>$([MSBuild]::Subtract($([System.DateTime]::UtcNow.Ticks), 630822816000000000))</AssemblyVersionBaseTicks>
+			<TicksPerDay>$([System.TimeSpan]::TicksPerDay)</TicksPerDay>
+			<TicksPerSecond>$([System.TimeSpan]::TicksPerSecond)</TicksPerSecond>
+			<AssemblyVersionBuild>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerDay)))))</AssemblyVersionBuild>
+			<AssemblyVersionTotalSeconds>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerSecond)))))</AssemblyVersionTotalSeconds>
+			<AssemblyVersionRemainingSeconds>$([System.Math]::Truncate($([MSBuild]::Modulo($(AssemblyVersionTotalSeconds), 86400))))</AssemblyVersionRemainingSeconds>
+			<AssemblyVersionRevision>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionRemainingSeconds), 2))))</AssemblyVersionRevision>
+			<VersionBuild Condition="'$(VersionBuild)' == '0'">$(AssemblyVersionBuild)</VersionBuild>
+			<VersionRevision Condition="'$(VersionRevision)' == '0'">$(AssemblyVersionRevision)</VersionRevision>
 
-    <PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' != ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
-    <PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' == ''">$(VersionPrefix)</PackageVersion>
-    
-    <InformationalVersion>$(PackageVersion)</InformationalVersion>
-    <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+			<VersionSuffix Condition="'$(VersionPrefix)' == ''">local</VersionSuffix>
+			<VersionPrefix Condition="'$(VersionPrefix)' == ''">$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
 
-    <Description>
-      <![CDATA[Coree.NETWindows is a comprehensive .NET Windows library streamlining coding tasks with its generic helpers. DocFX documentation is available, offering quick insights and examples for effective use.]]>
-    </Description>
-    <PackageReadmeFile>Readme.md</PackageReadmeFile>
-    <PackageLicenseFile>License.txt</PackageLicenseFile>
-    <PackageIcon>Icon.png</PackageIcon>
-    <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildThisFileDirectory)ReleaseNotes.txt"))</PackageReleaseNotes>
-  </PropertyGroup>
+			<PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' != ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
+			<PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' == ''">$(VersionPrefix)</PackageVersion>
+
+			<InformationalVersion>$(PackageVersion)</InformationalVersion>
+			<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+		</PropertyGroup>
+	</Target>
+
 
 </Project>
